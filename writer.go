@@ -30,7 +30,7 @@ func UUIDBytes(uuid uuid.UUID, serialVersionUID int64) []byte {
 	byteBuffer.Write(ShortBytes(2))
 
 	//filed type code
-	byteBuffer.Write([]byte{'J'})
+	byteBuffer.Write([]byte{LONG_TYPE})
 
 	f1 := "leastSigBits"
 	f1Len := len(f1)
@@ -39,7 +39,7 @@ func UUIDBytes(uuid uuid.UUID, serialVersionUID int64) []byte {
 	byteBuffer.Write([]byte(f1))
 
 	//filed type code
-	byteBuffer.Write([]byte{'J'})
+	byteBuffer.Write([]byte{LONG_TYPE})
 
 	f2 := "mostSigBits"
 	f2Len := len(f2)
