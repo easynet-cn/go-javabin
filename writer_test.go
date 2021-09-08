@@ -26,3 +26,19 @@ func TestUUID(t *testing.T) {
 
 	f.Write(data)
 }
+
+func TestString(t *testing.T) {
+	str := "this is a test.这是一个测试。"
+
+	f, err := os.Create("./string-go.bin")
+
+	if err != nil {
+		t.Error(err)
+	}
+
+	defer f.Close()
+
+	data := StringBytes(str)
+
+	f.Write(data)
+}
