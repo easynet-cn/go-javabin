@@ -10,6 +10,6 @@ const (
 	FLOAT_TYPE     = 'F'
 	DOUBLE_TYPE    = 'D'
 	VOID_TYPE      = 'V'
-	OJBECT_CLASS_1 = 'L'
-	OJBECT_CLASS_2 = '['
+	OJBECT_TYPE    = 'L'
+	ARRAY_TYPE     = '['
 )
